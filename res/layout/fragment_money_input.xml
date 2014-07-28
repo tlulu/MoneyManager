@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical" 
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:text="ENTER AMOUNT"
+            android:textSize="25dp"
+            android:textStyle="bold"
+             />
+
+        <EditText
+            android:id="@+id/priceInput"
+            android:layout_width="246dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSubmit"
+            android:text="Submit" 
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+  
+</RelativeLayout>
